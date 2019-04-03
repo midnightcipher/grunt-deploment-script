@@ -1,0 +1,42 @@
+{
+    "name": "Project_Name_Goes_Here",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "Repositority_Git_Link_Goes_Here",
+    "license": "MIT",
+    "devDependencies": {
+      "grunt": "^1.0.3",
+      "grunt-contrib-clean": "^0.5.0",
+      "grunt-contrib-connect": "^2.0.0",
+      "grunt-prompt": "^1.1.0",
+      "grunt-regex-replace": "^0.2.6",
+      "grunt-rsync": "^3.0.0",
+      "grunt-shell": "^0.7.0",
+      "npm": "^6.9.0"
+    },
+    "deployment": {
+      "servers": {
+        "prod": {
+          "ip": "Production_Ip_Goes_Here",
+          "user": "Production_User_Goes_Here",
+          "dest": "Destination_On_Server_To_Sync_To_Goes_Here",
+          "replace-configs": {
+            "src": [],
+            "actions": []
+          }
+        },
+        "stage": {
+          "ip": "Staging_Ip_Goes_Here",
+          "user": "Staging_User_Goes_Here",
+          "dest": "Destination_On_Server_To_Sync_To_Goes_Here",
+          "replace-configs": {
+            "src": [],
+            "actions": []
+          }
+        }
+      },
+      "exclude": [],
+    //   "versionFile": "src/public/version.json"
+    }
+  }
+  
